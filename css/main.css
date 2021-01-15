@@ -94,115 +94,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-   html {
-    background-color: #FAFAF2;
-    height: 100%;
-    font-size: 16px;
-  }
-  
-  body {
-    font-family: 'Source Sans Pro', sans-serif;
-    padding: 2em;
-    height: 100%;
-    color: black;
-  }
-  
-  header .logo{
-    flex-direction: column;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
-  }
-  
-  header img{
-      width: 45%;
-  }
-  
-  #mission{
-      display:flex;
-      flex-direction: column;
-
-      justify-content: center;
-      align-items: center;
-  }
-  
-  #mission h1{
-      /* margin: 5% 25%; */
-      padding: 0 5%;
-      text-align: center;
-      border: 3px solid #AEB87D;
-      background-color: #F1F3F0;
-      font-size: 1.5rem;
-      align-items: center;
-      flex-direction: column;
-
-  }
-  
-  .wrapper {
-    /*add display:flex and set justify-content to space-between*/
-    font-weight: normal;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .div-1, .div-2, .div-3 {
-    /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-    color: #fff;
-    line-height: 1.5em;
-    font-size: 1.6em;
-    background-color: #f16059;
-    height: auto;
-    width: 90%;
-    color: black;
-    border: 3px solid #3B5C2B;
-    margin: 5%;
-  }
-  
-  .div-1 h2, .div-2 h2, .div-3 h2{
-      margin-top: 5%;
-      height: 10%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      font-size: 1rem;
-      text-decoration: underline;
-      font-weight: normal;
-    }
-  
-  .div-1 p, .div-2 p, .div-3 p{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      font-size: 0.75rem;
-      padding: 0 5%;
-  }
-  
-  .div-1{
-      background-color: #AEB87D;
-  }
-  
-  .div-2{
-      background-color: #BF7DB3;
-  }
-  
-  .div-3{
-      background-color: #88B8B5;
-  }
-
-
-
-
-
-
-  @media (min-width:1200px){
-
     html {
     background-color: #FAFAF2;
     height: 100%;
@@ -216,11 +107,26 @@ textarea {
     color: black;
     }
 
-    header .logo{
-        display: flex;
-        flex-direction: row;
+    #greating{
+        display:flex;
         justify-content: center;
         align-items: center;
+        flex-flow: row wrap;
+        width:100%;
+    }
+    
+    .flex-container {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+      } 
+
+    header .logo{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:100%
     }
 
     header img{
@@ -228,13 +134,10 @@ textarea {
     }
 
     #mission{
-        display:flex;
-        justify-content: center;
-        flex-direction: row;
+
     }
 
     #mission h1{
-        margin: 5% 25%;
         padding: 0 5%;
         text-align: center;
         border: 3px solid #AEB87D;
@@ -245,9 +148,9 @@ textarea {
     .wrapper {
     /*add display:flex and set justify-content to space-between*/
     font-weight: normal;
-    display: flex;
-    flex-direction: row;
+    display:flex;
     justify-content: space-between;
+    align-items: center;
     }
 
     .div-1, .div-2, .div-3 {
@@ -256,7 +159,7 @@ textarea {
     line-height: 1.5em;
     font-size: 1.6em;
     background-color: #f16059;
-    height: 400px;
+    height: 300px;
     width: 30%;
     color: black;
     border: 3px solid #3B5C2B;
@@ -265,10 +168,7 @@ textarea {
     .div-1 h2, .div-2 h2, .div-3 h2{
         margin-top: 5%;
         height: 10%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        
         text-align: center;
         font-size: 2rem;
         text-decoration: underline;
@@ -276,10 +176,7 @@ textarea {
     }
 
     .div-1 p, .div-2 p, .div-3 p{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+
         text-align: center;
         font-size: 1.5rem;
         padding: 0 5%;
@@ -297,7 +194,6 @@ textarea {
         background-color: #88B8B5;
     }
 
-}
 
 
 /* ==========================================================================
